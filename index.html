@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- {desktop-nav} -->
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img class="logo-img" style="width: 40px; height: 40px;" src="assets/logo12.png" alt="LOGO">
+            <span>Gaurav Gupta</span>
+        </div>
+
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- {hamburger-nav} -->
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <img class="logo-img" style="width: 40px; height: 40px;" src="assets/logo12.png" alt="">
+            Gaurav Gupta
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- {Profile Section} -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/profile-pic.png" alt="Gaurav Gupta profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Gaurav Gupta</h1>
+            <p class="section__text__p2">Front End Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('assets/GauravGupta_CV_TATEX.pdf')">Download
+                    CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container" target="_blank">
+                <img src="assets/linkedin.png" alt="My linkedin profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/gaurav-gupta-b6a328309/'">
+                <img src="assets/github.png" alt="My github profile" class="icon"
+                    onclick="location.href='https://github.com/gauravthecoolboy24/'">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- {About Section} -->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+
+            <div class="section__pic-container">
+                <img class="about-pic" src="./assets/about-pic2.png" alt="Profile picture">
+            </div>
+
+            <div class="about-details-container">
+
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2.9+ years <br />Front End Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Computer Science Engineering (B.E) <br />ITM Universe</p>
+                    </div>
+                </div>
+
+                <div class="text-container">
+                    <p>
+                        I'm a front-end developer with a passion for creating engaging and user-friendly web
+                        applications. With a strong foundation in HTML, CSS, and JavaScript,I specialize in React and Tailwind
+                        CSS, focusing on user experience and performance optimization for responsive and interactive web interfaces. My goal is to deliver high-quality
+                        products that meet the needs of users and exceed their expectations.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+
+    <!-- {Experience Section} -->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+
+
+        <!-- {Languages and Frameworks container} -->
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Languages | Frameworks</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript(ES6+)</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>React.js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Tailwind CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>React-Redux</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Jquery</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Bootstrap</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>AOS (Animate on Scroll)</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Git & GitHub</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>VersionControl</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Figma</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+
+    <!-- {Projects Section} -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+
+        <!-- {Project one Container} -->
+        <div class="experience-details-containers">
+            <div class="details-containers">
+                <div class="section__pic-containers">
+                    <img class="about-pic" src="./assets/project-1.png" alt="Profile picture">
+                </div>
+                <h2 class="experience-sub-title project-title">Shopsy E-Commerce</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/gauravthecoolboy24/04--full-e-commerce-website-react-tailwind'">GitHub</button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://gaurav-shopsy.netlify.app/'">View Project</button>
+                </div>
+            </div>
+            <div class="project-container">
+                <h2 class="section__text__p1">Shopsy E-Commerce</h2>
+                <p class="section__text">React.js | HTML | Tailwind CSS | JavaScript | AOS(Anime on Scroll) |
+                    React-Icons
+                </p>
+                <br>
+                <p>
+                    • I develop responsive websites using these technologies to enhance user experience across various
+                    devices.
+                    <br>
+                    • Performed cross-browser testing to ensure compatibility and responsiveness, resolving issues to
+                    improve the user experience.
+                    <br>
+                    • Implemented animations and the dark mode feature using AOS to enhance the user experience and make
+                    the website more engaging and accessibility.
+                    <br>
+                    • Use Git for version control to track changes during development.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- {Project two Container} -->
+        <div class="experience-details-containers">
+            <div class="project-container">
+                <h2 class="section__text__p1">Flight Booking Webpage</h2>
+                <p class="section__text">React.js | HTML | Tailwind CSS | React-Redux | JavaScript |
+                    React-Icons
+                </p>
+                <br>
+                <p>
+                    • I develop responsive websites using these technologies to enhance user experience across various
+                    devices.
+                    <br>
+                    • Performed cross-browser testing to ensure compatibility and responsiveness, resolving issues to
+                    improve the user experience.
+                    <br>
+                    • Implemented animations and the dark mode feature using AOS to enhance the user experience and make
+                    the website more engaging and accessibility.
+
+                </p>
+            </div>
+            <div class="details-containers">
+                <div class="section__pic-containers">
+                    <img class="about-pic" src="./assets/project-2.png" alt="Profile picture">
+                </div>
+                <h2 class="experience-sub-title project-title">Shopsy E-Commerce</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/gauravthecoolboy24/Flight-Booking_redux'">GitHub</button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://flightbookingpage.netlify.app/'">View Project</button>
+                </div>
+            </div>
+
+        </div>
+
+        <img src="./assets/arrow.png" alt="" class="icon arrow" onclick="location.href='#contact'">
+    </section>
+
+
+    <!-- {Contact Section} -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h3 class="title">Contact Me</h3>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:gauravitm9@gmail.com">Gauravitm9@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/gaurav-gupta-b6a328309/">Linkedin</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/github.png" alt="github icon" class="icon contact-icon">
+                <p><a href="https://github.com/gauravthecoolboy24/">Github</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/phone.png" alt="github icon" class="icon contact-icon email-icon">
+                <p><a href="tel:+91-8109183734">+91-8109183734</a></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- {Footer} -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Gaurav Gupta. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
