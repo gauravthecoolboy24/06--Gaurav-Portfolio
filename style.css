@@ -303,6 +303,9 @@ section {
   border-radius: 2rem;
 }
 
+.project-pic {
+  border-radius: 2rem;  
+}
 .arrow {
   position: absolute;
   right: -5rem;
